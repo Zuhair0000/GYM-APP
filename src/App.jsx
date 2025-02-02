@@ -11,7 +11,7 @@ function App() {
   const [workout, setWorkout] = useState(0);
   const [poison, setPoison] = useState("individual");
   const [muscles, setMuscles] = useState([]);
-  const [goal, setGoals] = useState("strength_power");
+  const [goal, setGoal] = useState("strength_power");
 
   function updateWorkout() {
     if (muscles.length < 1) {
@@ -33,7 +33,7 @@ function App() {
         muscles={muscles}
         setMuscles={setMuscles}
         goal={goal}
-        setGoals={setGoals}
+        setGoal={setGoal}
         updateWorkout={updateWorkout}
       />
       {workout && <Workout workout={workout} />}
